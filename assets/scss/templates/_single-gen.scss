@@ -27,6 +27,8 @@
 
     @include breakpoint(small) {
       @include grid-column(12);
+      padding-top: rem-calc(25%);
+      padding-bottom: rem-calc(40%);
     }
 
     @include breakpoint(medium) {

@@ -52,6 +52,7 @@ get_header(); ?>
 
 		<aside class="entry-sidebar" data-sticky-container>
 			<div class="sticky" data-sticky data-anchor="course-content">
+				<div class="download-details">
 
 				<?php if(function_exists('edd_price')) { ?>
 					<div class="product-buttons">
@@ -61,6 +62,7 @@ get_header(); ?>
 
 					</div><!--end .product-buttons-->
 				<?php } ?>
+				</div>
 			</div>
 		</aside>
 

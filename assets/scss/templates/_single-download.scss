@@ -23,13 +23,19 @@
       @include grid-column(4);
     }
 
-
     .sticky {
+      width: 100%;
+      padding-right: 0.75rem;
+    }
+
+    .download-details {
 
       background-color: $secondary;
       color: $white;
-      width: 100%;
+
       @include block-padding;
+
+
 
     }
 
