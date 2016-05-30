@@ -14,6 +14,10 @@ get_header(); ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 	<?php
+
+	global $user_ID; // the ID of the currently logged-in user
+	$download_id = get_the_ID(); // download ID
+
 	if ( has_post_thumbnail() ) : ?>
 
 		<header id="single-hero" role="banner" style="background-image: url(<?php the_post_thumbnail_url( 'full' ); ?>);">
@@ -56,36 +60,40 @@ get_header(); ?>
 
 					<?php
 
-					// Show pay link
-					if(function_exists('edd_price')) { ?>
-						<div class="product-buttons">
-							<?php if(!edd_has_variable_prices(get_the_ID())) { ?>
-								<?php echo edd_get_purchase_link(get_the_ID(), 'Add to Cart', 'button'); ?>
-							<?php } ?>
 
-						</div><!--end .product-buttons-->
-					<?php }
-					
-					//Show download files
-					$files = edd_get_download_files( get_the_ID() );
-					if( $files ) { ?>
-						<h4> Archivos disponibles</h4>
-						<ul class="download-list-files">
-						<?php
-						foreach( $files as $filekey => $file ) { ?>
-							<li class="download-file">
-								<a href="<?php echo $file['file']; ?>">
-									<i class="fa-cloud-download"></i> <?php echo $file['name']; ?>
-								</a>
-							</li>
+
+					if( edd_has_user_purchased($user_ID, $download_id) ) {
+
+						//Show download files
+						$files = edd_get_download_files( get_the_ID() );
+						if( $files ) { ?>
+							<h4>Archivos disponibles</h4>
+							<ul class="download-list-files">
 							<?php
-							// Name: $file['name']
-							// URL or path: $file['file']
-						} ?>
-						</ul>
-					<?php
-					} 
+							foreach( $files as $filekey => $file ) { ?>
+								<li class="download-file">
+									<a href="<?php echo $file['file']; ?>">
+										<i class="fa-cloud-download"></i> <?php echo $file['name']; ?>
+									</a>
+								</li>
+								<?php
+								// Name: $file['name']
+								// URL or path: $file['file']
+							} ?>
+							</ul>
+						<?php }
 
+					} else {
+						// Show pay link
+						if(function_exists('edd_price')) { ?>
+							<div class="product-buttons">
+								<?php if(!edd_has_variable_prices(get_the_ID())) { ?>
+									<?php echo edd_get_purchase_link(get_the_ID(), 'Add to Cart', 'button'); ?>
+								<?php } ?>
+
+							</div><!--end .product-buttons-->
+						<?php }
+					}
 
 					?>
 
