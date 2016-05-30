@@ -1,0 +1,667 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"formResponse"
+			],
+			[
+				"has",
+				"hasClass"
+			],
+			[
+				"section",
+				"section-container"
+			],
+			[
+				"cout",
+				"count_class"
+			],
+			[
+				"count",
+				"count_class"
+			],
+			[
+				"loa",
+				"loadedSection"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"te",
+				"text-align-last"
+			],
+			[
+				"footer",
+				"footer-social"
+			],
+			[
+				"pa",
+				"padding-bottom"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"ma",
+				"margin-top"
+			],
+			[
+				"sec",
+				"section"
+			],
+			[
+				"ba",
+				"backkground-position"
+			],
+			[
+				"mar",
+				"maribel_beige"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-decoration-color"
+			],
+			[
+				"page-",
+				"page-grid-image"
+			],
+			[
+				"maribel",
+				"maribel_beige-light"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"backgr",
+				"background-color"
+			],
+			[
+				"site",
+				"site-main"
+			],
+			[
+				"share",
+				"share-icons"
+			],
+			[
+				"data",
+				"dataTarget"
+			],
+			[
+				"da",
+				"dataTarget"
+			],
+			[
+				"sh",
+				"shareTarget"
+			],
+			[
+				"click",
+				"clickTarget"
+			],
+			[
+				"cur",
+				"current"
+			],
+			[
+				"curr",
+				"currentTarget"
+			],
+			[
+				"my",
+				"myFullPage"
+			],
+			[
+				"lik",
+				"likeClick"
+			],
+			[
+				"is",
+				"is-loading"
+			],
+			[
+				"remo",
+				"removeOverlay"
+			],
+			[
+				"des",
+				"destroyFullpage"
+			],
+			[
+				"image",
+				"image_url"
+			],
+			[
+				"colo",
+				"color__link"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"get_the_i",
+				"get_the_ID"
+			],
+			[
+				"face",
+				"facebook_url"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"fi",
+				"figure	Tag"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-image"
+			],
+			[
+				"WP",
+				"WP_Query	New WP_Query Class"
+			],
+			[
+				"tedx",
+				"tedxred"
+			],
+			[
+				"pro",
+				"program_object"
+			],
+			[
+				"posts",
+				"posts_per_page"
+			],
+			[
+				"posi",
+				"position"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"n",
+				"none"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"a",
+				"absolute"
+			],
+			[
+				"speaker",
+				"speaker_day"
+			],
+			[
+				"post",
+				"posts_per_page"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"fotn",
+				"font-size"
+			],
+			[
+				"register_post",
+				"register_post_type	Register Post Type All Options"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 207.0,
+		"last_filter": "instal",
+		"selected_items":
+		[
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"Pac",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 467.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress"
+	],
+	"file_history":
+	[
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/loading-scripts.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/typography/_copy.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/_site.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/inc/enqueue.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-slide.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/inc/extras.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/secondary/_widgets.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/secondary/_toggle-sidebar.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_frontpage.scss",
+		"/Users/Mati/Sites/dilectus/wp-content/themes/dilectus/front-page.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/style.css",
+		"/Users/Mati/Sites/maribel2/wp-content/mu-plugins/mr-google-analytics.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/inc/template-tags.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/header.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/front-page.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_grid.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_site-header.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/typography/_headings.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/modernizr.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/functions.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sftp-config.json",
+		"/Users/Mati/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/maribelAdirondacky",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/adirondack-frontpage.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/page-grid.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/search.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/icons/_icons.scss",
+		"/Users/Mati/Library/Application Support/Sublime Text 3/Packages/User/sftp_servers/maribelDEV",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/css/sftp-config.json",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/TODO.txt",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-liked.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/inc/simple-likes.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/elements/_tables.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-grid-garment.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-page.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/primary/_search.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-none.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/primary/_not-found.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/404.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/single.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/forms/_fields.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_headers-other.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-single.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/primary/_single-post.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-search.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/variables-site/_structure.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/navigation/_menus.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_site-footer.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/forms/_ninja.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-footer.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/footer.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/lightbox.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/page-politica-cookies.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_page.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/typography/_gen-copy.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/single-garment.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/taxonomy-garment_tag.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_content-sidebar.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/icons/_fontello.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/navigation/_pagination.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/index.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/navigation/_navigation.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/forms/_mailchimp.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_layout.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/modules/_loading.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_grid-animation.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/forms/_forms.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-page-grid.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_page-grid.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/inc/modernizr.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/slick-init.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/template-parts/content-toggle-sidebar.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/toggle-sidebar.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/modules/_clearings.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/style.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/primary/_comments.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/single-collection.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_garment.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/nivo-init.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/modules/_nivo-theme.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/forms/_buttons.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/modules/_slick-theme.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/navigation.js",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/variables-site/_colors.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/archive.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/elements/_elements.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/comments.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/site/primary/_posts-and-pages.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/layout/_sidebar-content.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/media/_media.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/media/_captions.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/media/_galleries.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/css/style.css",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/_OG.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/mixins/_mixins-master.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/typography/_typography.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/navigation/_links.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/mixins/_mixins-utilities.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/mixins/_mixins-typography.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/modules/_alignments.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/variables-site/_typography.scss",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/single-lookbook.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/liked.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/page.php",
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/config.rb",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/css/jquery.fullPage.css",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/adirondack.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/sass/navigation/_links.scss",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/simple-likes-public.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/inc/post-like.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/functions.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/inc/adirondack-fonts.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/sass/modules/_loading.scss",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/loading-scripts.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/inc/template-tags.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/content-grid-garment.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/header.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/sass/icons/_fontello.scss",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/jquery.fullPage.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/jquery.slimscroll.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/frontpage.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/jquery.smoothState.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/pagetransition-log.txt",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/sass/media/_media.scss",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/js/share-popup.js",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/sass/layout/_fullpage.scss",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/front-page.php",
+		"/Users/Mati/Sites/maribel/wp-content/themes/adirondacky/sass/site/secondary/_widgets.scss"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"IP",
+			"get_post_meta($post_id, \"_user_IP\")",
+			"global $current_user",
+			"addTableClass",
+			"TABLE_CELL",
+			"entry-in",
+			"transitionEnd",
+			"url(",
+			".slider",
+			"'adirondack'",
+			"font",
+			"'adirondack'",
+			"'adirondacky'",
+			"#main",
+			".site-content",
+			"#content ",
+			".content-area",
+			"init",
+			"prepareDom",
+			".fn",
+			"document",
+			"data('url",
+			"options.onBefore($anchor, $container);\nload(request);",
+			"gaq",
+			"_gaq",
+			"window._gaq",
+			"pja",
+			"animate",
+			"comments",
+			".comments",
+			"#comments",
+			"comment",
+			"comments_template",
+			"comments",
+			"#a3b4cb",
+			"#2c3642",
+			"#e7ebf1",
+			"YourThemeTextDomain",
+			"93327329",
+			"55738979",
+			"meta-items",
+			"categori",
+			"-header",
+			"aside",
+			"icon",
+			"max-width",
+			"z-index",
+			"scroll",
+			"../fonts/",
+			"enqueu",
+			"adirondack_fonts_url",
+			"pjax",
+			"jointstheme",
+			"butler_regular",
+			"programa-label",
+			"13===c",
+			"acco",
+			"acc",
+			"D",
+			"tab",
+			"tabs",
+			"top: 0; bottom: 0; left: 0; right: 0;",
+			"spacin",
+			"red",
+			"entry_meta",
+			"events_filter",
+			"$column-gutter",
+			"tabs",
+			"my_query",
+			"page-title-speaker",
+			"speaker-occupation",
+			".speaker",
+			"center",
+			"  '",
+			"equali",
+			"prici",
+			"pricing",
+			"Custom Post",
+			"text",
+			"load_theme_textdomain",
+			"local"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"url(../images/nivo/",
+			".garment-image",
+			"'adirondacky'",
+			"'adirondack'",
+			"#page",
+			"sidebar",
+			".sidebar",
+			"#sidebar",
+			"$maribel_beige-lightish",
+			"$maribel_beige-dark",
+			"$maribel_beige-light",
+			"57239912",
+			"93327329",
+			"",
+			"mr_cpt",
+			"butler_bold",
+			"day1_feat_query",
+			"",
+			"Office"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"folders":
+	[
+		{
+			"path": "/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress"
+		}
+	],
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 164.0
+	},
+	"pinned_build_system": "",
+	"project": "",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"~/Sites/gulproject/gulpfile.js"
+			],
+			[
+				"meta",
+				"sass/elements/_tables.scss"
+			],
+			[
+				"mari",
+				"images/logo-maribelruiz.svg"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 255.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

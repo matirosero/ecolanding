@@ -1,0 +1,17 @@
+//Scale up base font responsively
+html {
+    @include breakpoint(small only) {
+        font-size: 115%;
+    }
+}
+
+.small-break {
+	@include breakpoint(small) {
+		display:block;
+	}
+
+	@include breakpoint(medium) {
+		display: inline;
+	}
+
+}

@@ -1,0 +1,267 @@
+// Page header
+#front-hero {
+	.marketing {
+		@include grid-row();
+		color: $white;
+		max-width: 55rem;
+	}
+
+	// background: url('../images/hero-bg-large.jpg') bottom center;
+
+	@include breakpoint(small) {
+		background: url('../images/hero-bg-small.jpg');
+		background-size: cover;
+		background-position: center;
+		padding: rem-calc(25%) 0;
+		margin: 0; //0 0 rem-calc(32);
+		height: auto;
+		position: relative;
+		text-align: left;
+	}
+
+	@include breakpoint(medium) {
+		background: url('../images/hero-bg-large.jpg');
+		background-size: cover;
+		background-position: center;
+		height: rem-calc(685);
+		padding: rem-calc(65%) 0;
+		margin: 0; //0 0 rem-calc(72);
+	}
+
+	#watch {
+
+		@include breakpoint(small) {
+			@include grid-column(7);
+			@include grid-column-position(-5);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(12);
+			@include grid-column-position(0);
+		}
+
+		section {
+			display: inline;
+		}
+
+		a {
+			color: #B4C9D1;
+			cursor: pointer;
+			font-weight: 400;
+			margin-right: rem-calc(20);
+		}
+
+		a:hover {
+			color: #fff;
+		}
+
+		#stargazers {
+			:before {
+				content: "\f09b";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: inherit;
+				color: #B4C9D1;
+				margin-right: rem-calc(8);
+			}
+		}
+
+		#twitter {
+			:before {
+				content: "\f099";
+				font-family: FontAwesome;
+				font-style: normal;
+				font-weight: normal;
+				text-decoration: inherit;
+				color: #B4C9D1;
+				margin-right: rem-calc(8);
+			}
+		}
+
+	}
+
+	.tagline {
+
+		@include breakpoint(small) {
+			@include grid-column(12);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(10);
+			padding-top: 6rem;
+		}
+
+	}
+
+	h1 {
+		color: #fff;
+		font-weight: bold;
+
+		@include breakpoint(small) {
+			font-size: 2.2rem;
+			line-height:1.1;
+		}
+
+		@include breakpoint(medium) {
+			font-size: 2.875rem;
+			line-height: 1.4;
+		}
+
+	}
+
+	h4 {
+		color: #fefefe;
+		font-weight: 300;
+		font-size: 1.3125rem;
+	}
+
+	p {
+		color: $white;
+	}
+
+	.download { margin-top: rem-calc(20); }
+
+}
+
+// Intro
+.intro {
+	@include grid-row($width: 100%);
+	@include section-padding;
+
+	background: $secondary;
+	color: $white;
+	text-align: center;
+
+	@include breakpoint(medium) {
+		font-size: 1.5rem;
+	}
+
+	.intro-container {
+		@include grid-row();
+	}
+
+	.fp-intro {
+
+		@include breakpoint(small) {
+			@include grid-column(12);
+		}
+
+		@include breakpoint(medium) {
+			@include grid-column(10);
+			@include grid-column-offset(1);
+
+			h2 {
+				font-weight: 300;
+				margin-bottom: 1.5rem;
+			}
+
+			h4 {
+				font-size: 1.125rem;
+				line-height: 1.6;
+				color: #777;
+				margin-bottom: 2rem;
+			}
+
+		}
+	}
+}
+
+// Section divider
+.section-divider {
+	@include grid-row();
+
+	hr {
+		@include grid-column(12);
+		@extend .dotted;
+		box-sizing: border-box;
+	}
+}
+
+
+// Benefits
+.fp-courses {
+	@include grid-row();
+	@include section-padding;
+
+	> header {
+		@include grid-column(12);
+	}
+
+	text-align: center;
+
+	.course-grid {
+		list-style: none;
+		// @include breakpoint(small) {
+		// 	@include grid-layout(1, '.course');
+		// }
+
+		// @include breakpoint(medium) {
+		// 	@include grid-layout(2, '.course');
+		// }
+	}
+
+
+
+
+	.course {
+
+		@include breakpoint(small) {
+			// margin-bottom: $normal-spacing-small;
+			margin-top: $normal-spacing-small;
+		}
+		@include breakpoint(medium) {
+			// margin-bottom: $normal-spacing;
+			margin-top: $normal-spacing;
+		}
+
+		.course-container {
+			border: 1px solid $light-gray;
+			position: relative;
+			text-align: left;
+		}
+
+
+
+		.course-title,
+		.course-intro,
+		.course-public-info,
+		.course-footer {
+			@include block-padding;
+		}
+
+		.course-title {
+			color: $white;
+			font-weight: bold;
+			// height: 100%;
+			position: absolute;
+			text-align: center;
+			top:0;
+			width: 100%;
+			small {
+				color: $white;
+				display: block;
+				line-height: inherit;
+			}
+		}
+
+		.course-intro,
+		.course-footer {
+			background-color: $secondary;
+			color: $white;
+		}
+
+		.course-intro {
+			margin-bottom: 0;
+		}
+
+
+	}
+
+	.why-foundation {
+		@include grid-row();
+		@include grid-column(12);
+		margin-top: 4rem;
+	}
+
+}

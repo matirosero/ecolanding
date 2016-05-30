@@ -1,0 +1,19 @@
+@mixin section-padding {
+	@include breakpoint(small) {
+		padding: 1.75rem 0 1rem;
+	}
+
+	@include breakpoint(medium) {
+		padding: 3rem 0 2rem;
+	}
+}
+
+@mixin block-padding {
+	@include breakpoint(small) {
+		padding: 1rem;
+	}
+
+	@include breakpoint(medium) {
+		padding: 1.25rem;
+	}
+}
