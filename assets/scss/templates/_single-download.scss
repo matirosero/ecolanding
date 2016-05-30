@@ -1,36 +1,51 @@
 #single-download {
   @include grid-row($width: 100%);
 
-
-  @include breakpoint(small) {
-    // background: url('../images/hero-bg-small.jpg');
-    background-size: cover;
-    background-position: center;
-    // padding: rem-calc(25%) 0;
-    margin: 0; //0 0 rem-calc(32);
-    height: auto;
-    position: relative;
-    text-align: left;
-  }
-
-  @include breakpoint(medium) {
-    // background: url('../images/hero-bg-large.jpg');
-    background-size: cover;
-    background-position: center;
-    height: rem-calc(685);
-    // padding: rem-calc(65%) 0;
-    margin: 0; //0 0 rem-calc(72);
-  }
-  
-
-  .main-content {
+  .entry-content {
     @include breakpoint(small) {
       @include grid-column(12);
     }
 
     @include breakpoint(medium) {
-      @include grid-column(12);
+      @include grid-column(8);
     }
   }
+
+  .entry-sidebar {
+
+
+
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
+
+    @include breakpoint(medium) {
+      @include grid-column(4);
+    }
+
+
+    .sticky {
+
+      background-color: $secondary;
+      color: $white;
+      width: 100%;
+      @include block-padding;
+
+    }
+
+  }
+
+  .course-intro {
+
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
+
+    @include breakpoint(medium) {
+      @include grid-column(10);
+      @include grid-column-offset(1);
+    }
+  }
+
 
 }
