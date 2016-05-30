@@ -8,11 +8,30 @@
 
 get_header(); ?>
 
-<div id="single-download" role="main">
+<article id="single-download" class="expanded" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
 <?php while ( have_posts() ) : the_post(); ?>
-	<article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
+
+	<?php
+		if ( has_post_thumbnail() ) : ?>
+			
+			<header id="single-hero" role="banner" style="background-image: url(<?php the_post_thumbnail_url( 'full' ); ?>);">
+				<div class="marketing">
+					<div class="tagline">
+						<h1 class="entry-title"><?php the_title(); ?></h1>
+
+
+					</div>
+				</div>
+
+			</header>			
+		<?php endif;
+	?>
+
+
+
+	<div <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
 		<header>
 			<h1 class="entry-title"><?php the_title(); ?></h1>
 			<?php //foundationpress_entry_meta(); ?>
@@ -35,9 +54,9 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_post_before_comments' ); ?>
 		<?php comments_template(); ?>
 		<?php do_action( 'foundationpress_post_after_comments' ); ?>
-	</article>
+	</div>
 <?php endwhile;?>
 
 <?php do_action( 'foundationpress_after_content' ); ?>
-</div>
+</article>
 <?php get_footer();
