@@ -51,7 +51,13 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div id="course-content" class="entry-content">
-			<?php the_content(); ?>
+			<?php the_field('downloads_will_learn'); ?>
+			<div class="section-divider">
+				<hr />
+			</div>
+			<?php if( edd_has_user_purchased($user_ID, $download_id) ):
+				the_content();
+			endif; ?>
 		</div>
 
 		<aside class="entry-sidebar" data-sticky-container>
@@ -59,8 +65,6 @@ get_header(); ?>
 				<div class="download-details">
 
 					<?php
-
-
 
 					if( edd_has_user_purchased($user_ID, $download_id) ) {
 
