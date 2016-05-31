@@ -17,3 +17,8 @@
 		padding: 1.25rem;
 	}
 }
+
+@mixin reset-list {
+	list-style: none;
+  	margin-left: 0;
+}

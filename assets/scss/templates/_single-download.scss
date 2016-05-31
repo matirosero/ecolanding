@@ -13,8 +13,6 @@
 
   .entry-sidebar {
 
-
-
     @include breakpoint(small) {
       @include grid-column(12);
     }
@@ -28,18 +26,9 @@
       padding-right: 0.75rem;
     }
 
-    .download-details {
-
-      background-color: $secondary;
-      color: $white;
-
-      @include block-padding;
-
-
-
-    }
-
   }
+
+
 
   .course-intro {
 
@@ -55,3 +44,24 @@
 
 
 }
+
+.download-details {
+
+  background-color: $secondary;
+  color: $white;
+
+  @include block-padding;
+
+  h4 {
+    color: $white;
+  }
+
+  a {
+    color: $white;
+    &:hover {
+      color: $primary;
+    }
+  }
+
+}
+

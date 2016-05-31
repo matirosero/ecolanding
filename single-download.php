@@ -52,11 +52,12 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div id="course-content" class="entry-content">
 			<?php the_field('downloads_will_learn'); ?>
-			<div class="section-divider">
-				<hr />
-			</div>
-			<?php if( edd_has_user_purchased($user_ID, $download_id) ):
-				the_content();
+
+			<?php if( edd_has_user_purchased($user_ID, $download_id) ): ?>
+				<div class="section-divider">
+					<hr />
+				</div>
+				<?php the_content();
 			endif; ?>
 		</div>
 
@@ -69,21 +70,27 @@ get_header(); ?>
 					if( edd_has_user_purchased($user_ID, $download_id) ) {
 
 						//Show download files
-						$files = edd_get_download_files( get_the_ID() );
-						if( $files ) { ?>
-							<h4>Archivos disponibles</h4>
+						$download_files = edd_get_download_files( get_the_ID(), $price_id );
+						$name           = get_the_title( get_the_ID() );
+
+
+
+						if( $download_files ) { ?>
+							<h4>Descargas</h4>
 							<ul class="download-list-files">
 							<?php
-							foreach( $files as $filekey => $file ) { ?>
+							foreach( $download_files as $filekey => $file ) { 
+
+								//HOW TO GET PURCHASE_DATA AND PAYMENT ID???
+								$download_url = edd_get_download_file_url( $purchase_data['key'], $email, $filekey, get_the_ID(), $price_id );
+								?>
+
 								<li class="download-file">
-									<a href="<?php echo $file['file']; ?>">
-										<i class="fa-cloud-download"></i> <?php echo $file['name']; ?>
+									<a href="<?php echo esc_url( $download_url ); ?>">
+										<?php echo $file['name']; ?>
 									</a>
 								</li>
-								<?php
-								// Name: $file['name']
-								// URL or path: $file['file']
-							} ?>
+							<?php } ?>
 							</ul>
 						<?php }
 

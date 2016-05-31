@@ -5,6 +5,10 @@ html {
     }
 }
 
+a {
+	font-weight: bold;
+}
+
 .small-break {
 	@include breakpoint(small) {
 		display:block;
@@ -12,6 +16,71 @@ html {
 
 	@include breakpoint(medium) {
 		display: inline;
+	}
+
+}
+
+.download-list-files {
+  	@include reset-list;
+}
+
+.download-file {
+	margin-bottom: .5rem;
+	a {
+		display:block;
+		position: relative;
+
+		@include breakpoint(small) {
+			line-height:  45px;
+			margin-left: 55px;
+
+		}
+		@include breakpoint(large) {
+			margin-left: 2rem;
+			line-height: 1.5rem;
+		}
+
+		&:before {
+			color: $primary;
+			content: $fa-var-cloud-download;
+			display: inline-block;
+			font: normal normal normal #{$fa-font-size-base}/#{$fa-line-height-base} FontAwesome; // shortening font declaration
+			font-size: inherit; // can't have font-size inherit on line above, so need to override
+			text-rendering: auto; // optimizelegibility throws things off #1094
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+
+			position: absolute;
+			line-height: inherit;
+			text-align: center;
+			background: $white;
+
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			border-radius: 50%;
+
+			@include breakpoint(small) {
+				height: 45px;
+				width: 45px;
+				left: -55px;
+				top:0;
+				font-size: 30px;
+
+			}
+			@include breakpoint(large) {
+				height: 1.5rem;
+				width: 1.5rem;
+
+				left: -2em;
+				top: .15rem;
+				font-size: inherit;
+			}
+		}
+
+		&:hover:before {
+			color: $white;
+			background-color: $primary;
+		}
 	}
 
 }
