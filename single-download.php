@@ -71,9 +71,37 @@ get_header(); ?>
 
 						//Show download files
 						$purchase_data  = edd_get_payment_meta( 61 );
-						var_dump($purchase_data);
+						// var_dump(get_payment_ids());
 						$download_files = edd_get_download_files( get_the_ID(), $price_id );
 						$name           = get_the_title( get_the_ID() );
+
+	// Instantiate a new instance of the class
+	$edd_logging = new EDD_Logging;
+
+	// get logs for this download with type of 'sale'
+	$logs = $edd_logging->get_logs( $download_id, 'sale' );
+
+	// if logs exist
+	if ( $logs ) {
+		// create array to store our log IDs into
+		$log_ids = array();
+		// add each log ID to the array
+		foreach ( $logs as $log ) {
+			$log_ids[] = $log->ID;
+		}
+		// return our array
+		var_dump($log_ids);
+
+		$payment_ids = array();
+
+		foreach ( $log_ids as $id ) {
+			// get the payment ID for each corresponding log ID
+			$payment_ids[] = get_post_meta( $id, '_edd_log_payment_id', true );
+		}
+		var_dump($payment_ids);
+	}
+
+	//get payment id
 
 
 
