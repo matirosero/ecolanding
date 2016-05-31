@@ -70,6 +70,8 @@ get_header(); ?>
 					if( edd_has_user_purchased($user_ID, $download_id) ) {
 
 						//Show download files
+						$purchase_data  = edd_get_payment_meta( 61 );
+						var_dump($purchase_data);
 						$download_files = edd_get_download_files( get_the_ID(), $price_id );
 						$name           = get_the_title( get_the_ID() );
 
