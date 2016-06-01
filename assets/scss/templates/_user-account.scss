@@ -1,16 +1,17 @@
-#page-full-width {
+#user-account {
   @include grid-row();
   margin-top: 3rem;
 
   .main-content {
     @include breakpoint(small) {
       @include grid-column(12);
+      @include grid-column-position(center);
     }
+
     @include breakpoint(medium) {
       @include grid-column(8);
       @include grid-column-position(center);
     }
-
   }
 
 }
