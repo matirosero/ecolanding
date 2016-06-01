@@ -265,3 +265,25 @@
 	}
 
 }
+
+.contact {
+	@include grid-row($width: 100%);
+	@include section-padding;
+
+	.contact-container {
+		@include grid-row();
+
+		> .contact-form {
+			@include breakpoint(small) {
+				@include grid-column(12);
+			}
+
+			@include breakpoint(medium) {
+				@include grid-column(10);
+				@include grid-column-position(center);
+			}
+		}
+	}
+
+
+}

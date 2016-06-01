@@ -141,15 +141,23 @@ get_header(); ?>
 
 	</div>
 
+</section><!-- .fp-courses -->
 
+<div class="section-divider">
+	<hr />
+</div>
 
+<section class="contact" role="secondary">
+	<div class="contact-container">
+		<div class="contact-form">
+			<header>
+				<h2>Contáctanos</h2>
+				<p>Escríbenos a <a ref="mailto:"></a> o llena este formulario y nos pondremos en contacto en cuanto sea posible. </p>
+			</header>
+			<?php echo do_shortcode( '[contact-form-7 id="89" title="Contáctanos"]' ); ?>
+		</div>
 
-
-
-
-
-</section>
-
-
+	</div>
+</section><!-- .contact -->
 
 <?php get_footer();

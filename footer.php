@@ -13,9 +13,11 @@
 		</section>
 		<div id="footer-container">
 			<footer id="footer">
-				<?php do_action( 'foundationpress_before_footer' ); ?>
-				<?php dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php do_action( 'foundationpress_after_footer' ); ?>
+				<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, todos los derechos reservados.<br />
+				<small>Desarrollo web: <a href="http://matilderosero.com">Matilde Rosero</a>.</small></p>
+				<?php //do_action( 'foundationpress_before_footer' ); ?>
+				<?php //dynamic_sidebar( 'footer-widgets' ); ?>
+				<?php //do_action( 'foundationpress_after_footer' ); ?>
 			</footer>
 		</div>
 
