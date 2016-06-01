@@ -17,61 +17,46 @@ get_header(); ?>
 
 	global $user_ID; // the ID of the currently logged-in user
 	$download_id = get_the_ID(); // download ID
-	echo 'USER ID = '.$user_ID.'<br /><br />';
 
+	//If user has purchased this, find payment ID
+	if( edd_has_user_purchased($user_ID, $download_id) ) {
 
-	//Use Log IDs to get Payments IDs
+		//Use Log IDs to get Payments IDs
 
-	// Instantiate a new instance of the class
-	$edd_logging = new EDD_Logging;
+		// Instantiate a new instance of the class
+		$edd_logging = new EDD_Logging;
 
-	// get logs for this download with type of 'sale'
-	$logs = $edd_logging->get_logs( $download_id, 'sale' );
+		// get logs for this download with type of 'sale'
+		$logs = $edd_logging->get_logs( $download_id, 'sale' );
 
-	// if logs exist
-	if ( $logs ) {
-		// create array to store our log IDs into
-		$log_ids = array();
-		// add each log ID to the array
-		foreach ( $logs as $log ) {
-			$log_ids[] = $log->ID;
+		// if logs exist
+		if ( $logs ) {
+			// create array to store our log IDs into
+			$log_ids = array();
+			// add each log ID to the array
+			foreach ( $logs as $log ) {
+				$log_ids[] = $log->ID;
+			}
+			// return our array
+
+			$payment_ids = array();
+
+			foreach ( $log_ids as $log_id ) {
+				// get the payment ID for each corresponding log ID
+				// $payment_ids[] = get_post_meta( $log_id, '_edd_log_payment_id', true );
+				$payment_id = get_post_meta( $log_id, '_edd_log_payment_id', true );
+
+				$payment = new EDD_Payment($payment_id);
+
+				//http://stackoverflow.com/questions/8102221/php-multidimensional-array-searching-find-key-by-specific-value
+				if ( $payment->user_id == $user_ID) {
+					// echo 'PAYMENT USER ID <strong>'.$payment->user_id.'</strong> matches USER ID <strong>'.$user_ID.'</strong><br /> Return PAYMENT ID <strong>'.$payment_id.'</strong><br />';
+					$the_payment_ID = $payment_id;
+				}
+			}
 		}
-		// return our array
-		// var_dump($log_ids);
-
-		$payment_ids = array();
-
-		foreach ( $log_ids as $log_id ) {
-			// get the payment ID for each corresponding log ID
-			$payment_ids[] = get_post_meta( $log_id, '_edd_log_payment_id', true );
-		}
-		var_dump($payment_ids);
-
-		foreach ( $payment_ids as $payment_id ) {
-
-			$payment = new EDD_Payment($payment_id);
-			$payment_user_ID = $payment->user_id;
-			echo $payment_user_ID.'<br />';
-			
-			//http://stackoverflow.com/questions/8102221/php-multidimensional-array-searching-find-key-by-specific-value
-			if ( $payment_user_ID == $user_ID) {
-				echo 'PAYMENT USER ID <strong>'.$payment_user_ID.'</strong> matches USER ID <strong>'.$user_ID.'</strong><br /> Return PAYMENT ID <strong>'.$payment_id.'</strong><br />';
-				$the_payment_ID = $payment_id;
-			} 
-
-		}
-
-		echo 'THE PAYMENT ID IS '.$the_payment_ID;
-
-		//Compare payment ids to user id
 	}
 
-	// $download = edd_get_download(get_the_ID());
-	// var_dump($download);
-
-	//Same info as above, can be used to get files, file download limit: http://docs.easydigitaldownloads.com/article/1020-edddownload
-	// $download2 = new EDD_Download( get_the_ID() );
-	// var_dump($download);
 
 
 
@@ -132,18 +117,12 @@ get_header(); ?>
 						$purchase_data  = edd_get_payment_meta( $the_payment_ID );
 						// var_dump(get_payment_ids());
 						$download_files = edd_get_download_files( get_the_ID(), $price_id );
-						$name           = get_the_title( get_the_ID() );
-
-
-
-
-
 
 						if( $download_files ) { ?>
 							<h4>Descargas</h4>
 							<ul class="download-list-files">
 							<?php
-							foreach( $download_files as $filekey => $file ) { 
+							foreach( $download_files as $filekey => $file ) {
 
 								//HOW TO GET PURCHASE_DATA AND PAYMENT ID???
 								$download_url = edd_get_download_file_url( $purchase_data['key'], $email, $filekey, get_the_ID(), $price_id );
