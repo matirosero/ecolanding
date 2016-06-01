@@ -18,44 +18,9 @@ get_header(); ?>
 	global $user_ID; // the ID of the currently logged-in user
 	$download_id = get_the_ID(); // download ID
 
-	//If user has purchased this, find payment ID
-	if( edd_has_user_purchased($user_ID, $download_id) ) {
 
-		//Use Log IDs to get Payments IDs
 
-		// Instantiate a new instance of the class
-		$edd_logging = new EDD_Logging;
 
-		// get logs for this download with type of 'sale'
-		$logs = $edd_logging->get_logs( $download_id, 'sale' );
-
-		// if logs exist
-		if ( $logs ) {
-			// create array to store our log IDs into
-			$log_ids = array();
-			// add each log ID to the array
-			foreach ( $logs as $log ) {
-				$log_ids[] = $log->ID;
-			}
-			// return our array
-
-			$payment_ids = array();
-
-			foreach ( $log_ids as $log_id ) {
-				// get the payment ID for each corresponding log ID
-				// $payment_ids[] = get_post_meta( $log_id, '_edd_log_payment_id', true );
-				$payment_id = get_post_meta( $log_id, '_edd_log_payment_id', true );
-
-				$payment = new EDD_Payment($payment_id);
-
-				//http://stackoverflow.com/questions/8102221/php-multidimensional-array-searching-find-key-by-specific-value
-				if ( $payment->user_id == $user_ID) {
-					// echo 'PAYMENT USER ID <strong>'.$payment->user_id.'</strong> matches USER ID <strong>'.$user_ID.'</strong><br /> Return PAYMENT ID <strong>'.$payment_id.'</strong><br />';
-					$the_payment_ID = $payment_id;
-				}
-			}
-		}
-	}
 
 
 
@@ -114,7 +79,7 @@ get_header(); ?>
 					if( edd_has_user_purchased($user_ID, $download_id) ) {
 
 						//Show download files
-						$purchase_data  = edd_get_payment_meta( $the_payment_ID );
+						$purchase_data  = edd_get_payment_meta( edd_get_payment_id($user_ID, $download_id) );
 						// var_dump(get_payment_ids());
 						$download_files = edd_get_download_files( get_the_ID(), $price_id );
 
