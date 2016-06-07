@@ -67,7 +67,7 @@ $mustard: map-get($foundation-palette, mustard);
 $purple: map-get($foundation-palette, purple);
 $light-gray: #e6e6e6;
 $medium-gray: #bfbfbf;
-$dark-gray: #8a8a8a;
+$dark-gray: #2C2B2B;
 $black: #0a0a0a;
 $white: #fefefe;
 $body-background: $white;
@@ -557,7 +557,7 @@ $thumbnail-radius: $global-radius;
 // 34. Title Bar
 // -------------
 
-$titlebar-background: $secondary;
+$titlebar-background: $dark-gray;
 $titlebar-color: $white;
 $titlebar-padding: 0.5rem;
 $titlebar-text-font-weight: bold;
@@ -580,7 +580,7 @@ $tooltip-radius: $global-radius;
 // -----------
 
 $topbar-padding: 0;
-$topbar-background: $primary;
+$topbar-background: $dark-gray;
 $topbar-submenu-background: $topbar-background;
 $topbar-link-color: #fff;
 $topbar-input-width: 200px;

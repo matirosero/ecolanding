@@ -1,3 +1,28 @@
+.facebook-link a,
+.youtube-link a {
+
+  span {
+    // @include hide-for(medium);
+  }
+  :before {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    margin-right: rem-calc(8);
+  }
+}
+.youtube-link a {
+  :before {
+    content: $fa-var-youtube-play;
+  }
+}
+.facebook-link a {
+  :before {
+    content: $fa-var-facebook;
+  }
+}
+
 /* Navigation breakpoints */
 
 .desktop-menu, .top-bar-left {
@@ -20,7 +45,7 @@
 .title-bar-title {
   a {
     font-size: 1rem;
-    color: #B9B9B9;
+    color: $white;
   }
 }
 
@@ -33,22 +58,32 @@
   }
 
   .menu a {
-    height: 45px;
-    line-height: 45px;
+    height: 70px;
+    line-height: 70px;
     color: $white;
     padding-top: 0;
     padding-bottom: 0;
     font-weight: bold;
     font-size: 0.8rem;
-    line-height: 1;
+    // line-height: 1;
 
     &:hover:not(.button) {
-      background-color: $darkgreen;
+      // background-color: $darkgreen;
+      color: $primary;
     }
   }
 
-  .menu>li:not(.menu-text)>a { padding: 1rem; }
-  .menu li:not(:last-child) { border-right: 1px solid #4e4e4e; }
+  #mobile-menu .menu a {
+      height: 45px;
+      line-height: 45px;
+  }
+
+  .menu>li:not(.menu-text)>a { 
+    //padding: 1rem; 
+  }
+  .menu li:not(:last-child) { 
+    // border-right: 1px solid #4e4e4e; 
+  }
 
   .dropdown.menu .submenu {
     background-color: #121212;

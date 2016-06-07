@@ -6,6 +6,11 @@ get_header(); ?>
 
 <header id="front-hero" role="banner">
 	<div class="marketing">
+		<div class="logo">
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-home.svg" alt="ECO Acompañamiento Empresarial" />
+			</a>
+		</div>
 		<div class="tagline">
 			<h1><span class="small-break">Tu vida. </span><span class="small-break">Tu negocio. </span><span class="small-break">Tu éxito.</span></h1>
 			<p class="subheader">Recibe de forma gratuita información valiosa sobre productividad, mercadeo, estrategia, emprendedurismo, vida integral, y más.</p>

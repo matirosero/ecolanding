@@ -31,7 +31,7 @@
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
 			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Soy empresario <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-topbar.svg" alt="ECO" /></a>
 			</div>
 		</div>
 
