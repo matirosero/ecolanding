@@ -24,7 +24,7 @@ if ($current_user->user_firstname) {
   <article <?php post_class('main-content') ?> id="post-<?php the_ID(); ?>">
       <header>
           <h1 class="entry-title"><?php the_title(); ?>
-            <small>¡Hola, <?php echo $user_name; ?>!</small>
+            <?php if ( is_user_logged_in () ) : ?><small>¡Hola, <?php echo $user_name; ?>!</small><?php endif; ?>
           </h1>
       </header>
       <?php do_action( 'foundationpress_page_before_entry_content' ); ?>

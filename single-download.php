@@ -18,15 +18,6 @@ get_header(); ?>
 	global $user_ID; // the ID of the currently logged-in user
 	$download_id = get_the_ID(); // download ID
 
-
-
-
-
-
-
-
-
-
 	if ( has_post_thumbnail() ) : ?>
 
 		<header id="single-hero" role="banner" style="background-image: url(<?php the_post_thumbnail_url( 'full' ); ?>);">

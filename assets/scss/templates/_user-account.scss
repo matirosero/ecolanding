@@ -3,6 +3,11 @@
   margin-top: 3rem;
 
   .main-content {
+    
+    > header {
+      margin-bottom: 2rem;
+    }
+
     @include breakpoint(small) {
       @include grid-column(12);
       @include grid-column-position(center);
@@ -15,3 +20,14 @@
   }
 
 }
+
+#edd_user_history {
+  margin-bottom: 2rem;
+  a {
+    font-weight: normal;
+  }
+  td, th {
+    padding: .5rem 1rem;
+  }
+}
+

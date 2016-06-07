@@ -24,13 +24,16 @@ if ( is_user_logged_in() ):
 
 	<?php do_action( 'edd_profile_editor_before' ); ?>
 
+	<h3>Tus datos</h3>
+
 	<form id="edd_profile_editor_form" class="edd_form" action="<?php echo edd_get_current_page_url(); ?>" method="post">
 		<fieldset>
-			<span id="edd_profile_name_label"><legend><?php _e( 'Change your Name', 'easy-digital-downloads' ); ?></legend></span>
+			<legend><?php _e( 'Change your Name', 'easy-digital-downloads' ); ?></legend>
 			<p id="edd_profile_name_wrap">
 				<label for="edd_first_name"><?php _e( 'First Name', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_first_name" id="edd_first_name" class="text edd-input" type="text" value="<?php echo esc_attr( $first_name ); ?>" />
-				<br />
+			</p>
+			<p id="edd_profile_lastname_wrap">
 				<label for="edd_last_name"><?php _e( 'Last Name', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_last_name" id="edd_last_name" class="text edd-input" type="text" value="<?php echo esc_attr( $last_name ); ?>" />
 			</p>
@@ -58,51 +61,58 @@ if ( is_user_logged_in() ):
 				<?php do_action( 'edd_profile_editor_email' ); ?>
 			</p>
 			<?php do_action( 'edd_profile_editor_after_email' ); ?>
+		</fieldset>
+
+		<fieldset>
 			<span id="edd_profile_billing_address_label"><legend><?php _e( 'Change your Billing Address', 'easy-digital-downloads' ); ?></legend></span>
 			<p id="edd_profile_billing_address_wrap">
 				<label for="edd_address_line1"><?php _e( 'Line 1', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_address_line1" id="edd_address_line1" class="text edd-input" type="text" value="<?php echo esc_attr( $address['line1'] ); ?>" />
-				<br/>
+				
 				<label for="edd_address_line2"><?php _e( 'Line 2', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_address_line2" id="edd_address_line2" class="text edd-input" type="text" value="<?php echo esc_attr( $address['line2'] ); ?>" />
-				<br/>
+				
 				<label for="edd_address_city"><?php _e( 'City', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_address_city" id="edd_address_city" class="text edd-input" type="text" value="<?php echo esc_attr( $address['city'] ); ?>" />
-				<br/>
+				
 				<label for="edd_address_zip"><?php _e( 'Zip / Postal Code', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_address_zip" id="edd_address_zip" class="text edd-input" type="text" value="<?php echo esc_attr( $address['zip'] ); ?>" />
-				<br/>
+				
 				<label for="edd_address_country"><?php _e( 'Country', 'easy-digital-downloads' ); ?></label>
 				<select name="edd_address_country" id="edd_address_country" class="select edd-select">
 					<?php foreach( edd_get_country_list() as $key => $country ) : ?>
 					<option value="<?php echo $key; ?>"<?php selected( $address['country'], $key ); ?>><?php echo esc_html( $country ); ?></option>
 					<?php endforeach; ?>
 				</select>
-				<br/>
+				
 				<label for="edd_address_state"><?php _e( 'State / Province', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_address_state" id="edd_address_state" class="text edd-input" type="text" value="<?php echo esc_attr( $address['state'] ); ?>" />
-				<br/>
+				
 				<?php do_action( 'edd_profile_editor_address' ); ?>
 			</p>
 			<?php do_action( 'edd_profile_editor_after_address' ); ?>
+		</fieldset>
+
+		<fieldset>
 			<span id="edd_profile_password_label"><legend><?php _e( 'Change your Password', 'easy-digital-downloads' ); ?></legend></span>
 			<p id="edd_profile_password_wrap">
 				<label for="edd_user_pass"><?php _e( 'New Password', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_new_user_pass1" id="edd_new_user_pass1" class="password edd-input" type="password"/>
-				<br />
+
 				<label for="edd_user_pass"><?php _e( 'Re-enter Password', 'easy-digital-downloads' ); ?></label>
 				<input name="edd_new_user_pass2" id="edd_new_user_pass2" class="password edd-input" type="password"/>
 				<?php do_action( 'edd_profile_editor_password' ); ?>
 			</p>
 			<p class="edd_password_change_notice"><?php _e( 'Please note after changing your password, you must log back in.', 'easy-digital-downloads' ); ?></p>
 			<?php do_action( 'edd_profile_editor_after_password' ); ?>
+		</fieldset>
+
 			<p id="edd_profile_submit_wrap">
 				<input type="hidden" name="edd_profile_editor_nonce" value="<?php echo wp_create_nonce( 'edd-profile-editor-nonce' ); ?>"/>
 				<input type="hidden" name="edd_action" value="edit_user_profile" />
 				<input type="hidden" name="edd_redirect" value="<?php echo esc_url( edd_get_current_page_url() ); ?>" />
 				<input name="edd_profile_editor_submit" id="edd_profile_editor_submit" type="submit" class="button edd_submit" value="<?php _e( 'Save Changes', 'easy-digital-downloads' ); ?>"/>
 			</p>
-		</fieldset>
 	</form><!-- #edd_profile_editor_form -->
 
 	<?php do_action( 'edd_profile_editor_after' ); ?>

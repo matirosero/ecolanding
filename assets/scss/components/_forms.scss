@@ -13,3 +13,37 @@
 	}
 
 }
+
+
+
+#respond {
+	@include breakpoint(small) {
+		margin-top: 1.75rem;
+	}
+
+	@include breakpoint(medium) {
+		margin-top: 3rem;
+	}
+}
+
+#commentform {
+
+	textarea {
+		height: 6rem;
+	}
+
+	#allowed_tags {
+		display: none;
+	}
+
+	.button {
+		margin-bottom: 0;
+	}
+
+}
+
+
+#edd_profile_editor_form label {
+    display: block;
+    width: auto;
+}
