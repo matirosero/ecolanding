@@ -58,7 +58,7 @@ get_header(); ?>
 
 <section class="fp-courses">
 	<header>
-		<h2>Cursos</h2>
+		<h2>Cursos &amp; Ebooks</h2>
 		<p>En ECO queremos ayudarte a alcanzar todas tus metas a través de nuestros cursos, artículos y nuestros servicios personalizados uno a uno, presenciales o en línea. </p>
 	</header>
 
@@ -118,8 +118,7 @@ get_header(); ?>
 
 					<p class="course-intro"><?php the_field('downloads_intro'); ?></p>
 					<div class="course-public-info">
-						<h4>En este curso aprenderás: </h4>
-						<?php the_field('downloads_will_learn'); ?>
+						<?php the_field('downloads_public'); ?>
 					</div>
 
 					<footer class="course-footer">
