@@ -82,34 +82,37 @@ get_header(); ?>
 			<li class="course column">
 				<div class="course-container">
 
-					<header class="course-header">
-						<?php the_post_thumbnail('product-image'); ?>
+					<header class="course-header" style="background-image: url(<?php the_post_thumbnail_url( 'product-image' ); ?>);">
+			<div class="hero-header-container">
+						<?php //the_post_thumbnail('product-image'); ?>
 						<h3 class="course-title"><?php the_title(); ?>
 							<small><?php the_field('downloads_subtitle'); ?></small>
 						</h3>
 
-						<?php if(function_exists('edd_price')) { ?>
-							<div class="product-price">
-								<?php
-									if(edd_has_variable_prices(get_the_ID())) {
-										// if the download has variable prices, show the first one as a starting price
-										echo 'Starting at: '; edd_price(get_the_ID());
-									} else {
-										edd_price(get_the_ID());
-									}
-								?>
-							</div><!--end .product-price-->
-						<?php } ?>
+						<div class="product-price-buttons">
+							<?php if(function_exists('edd_price')) { ?>
+								<div class="product-price">
+									<?php
+										if(edd_has_variable_prices(get_the_ID())) {
+											// if the download has variable prices, show the first one as a starting price
+											echo 'Starting at: '; edd_price(get_the_ID());
+										} else {
+											echo 'Inversión: '; edd_price(get_the_ID());
+										}
+									?>
+								</div><!--end .product-price-->
+							<?php } ?>
 
-						<?php if(function_exists('edd_price')) { ?>
-							<div class="product-buttons">
-								<?php if(!edd_has_variable_prices(get_the_ID())) { ?>
-									<?php echo edd_get_purchase_link(get_the_ID(), 'Add to Cart', 'button'); ?>
-								<?php } ?>
+							<?php if(function_exists('edd_price')) { ?>
+								<div class="product-buttons">
+									<?php if(!edd_has_variable_prices(get_the_ID())) { ?>
+										<?php echo edd_get_purchase_link(get_the_ID(), 'Add to Cart', 'button'); ?>
+									<?php } ?>
 
-							</div><!--end .product-buttons-->
-						<?php } ?>
-						
+								</div><!--end .product-buttons-->
+							<?php } ?>
+						</div><!--end .product-price-buttons-->
+
 					</header>
 
 
@@ -127,7 +130,7 @@ get_header(); ?>
 										// if the download has variable prices, show the first one as a starting price
 										echo 'Starting at: '; edd_price(get_the_ID());
 									} else {
-										edd_price(get_the_ID());
+										echo 'Inversión: '; edd_price(get_the_ID());
 									}
 								?>
 							</div><!--end .product-price-->
