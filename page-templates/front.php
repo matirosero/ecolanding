@@ -14,7 +14,7 @@ get_header(); ?>
 		<div class="tagline">
 			<h1><span class="small-break">Tu vida. </span><span class="small-break">Tu negocio. </span><span class="small-break">Tu éxito.</span></h1>
 			<p class="subheader">Recibe de forma gratuita información valiosa sobre productividad, mercadeo, estrategia, emprendedurismo, vida integral, y más.</p>
-			<?php 
+			<?php
 				if( function_exists( 'mc4wp_show_form' ) ) {
 				    mc4wp_show_form();
 				}
@@ -45,7 +45,7 @@ get_header(); ?>
 			</div>
 
 		</div>
-	</div>	
+	</div>
 
 </section>
 <?php endwhile;?>
@@ -88,6 +88,28 @@ get_header(); ?>
 							<small><?php the_field('downloads_subtitle'); ?></small>
 						</h3>
 
+						<?php if(function_exists('edd_price')) { ?>
+							<div class="product-price">
+								<?php
+									if(edd_has_variable_prices(get_the_ID())) {
+										// if the download has variable prices, show the first one as a starting price
+										echo 'Starting at: '; edd_price(get_the_ID());
+									} else {
+										edd_price(get_the_ID());
+									}
+								?>
+							</div><!--end .product-price-->
+						<?php } ?>
+
+						<?php if(function_exists('edd_price')) { ?>
+							<div class="product-buttons">
+								<?php if(!edd_has_variable_prices(get_the_ID())) { ?>
+									<?php echo edd_get_purchase_link(get_the_ID(), 'Add to Cart', 'button'); ?>
+								<?php } ?>
+
+							</div><!--end .product-buttons-->
+						<?php } ?>
+						
 					</header>
 
 
@@ -100,16 +122,16 @@ get_header(); ?>
 					<footer class="course-footer">
 						<?php if(function_exists('edd_price')) { ?>
 							<div class="product-price">
-								<?php 
+								<?php
 									if(edd_has_variable_prices(get_the_ID())) {
 										// if the download has variable prices, show the first one as a starting price
 										echo 'Starting at: '; edd_price(get_the_ID());
 									} else {
-										edd_price(get_the_ID()); 
+										edd_price(get_the_ID());
 									}
 								?>
 							</div><!--end .product-price-->
-						<?php } ?>					
+						<?php } ?>
 
 						<?php if(function_exists('edd_price')) { ?>
 							<div class="product-buttons">
@@ -124,10 +146,10 @@ get_header(); ?>
 			</li><!--end .product-->
 			<?php $i+=1; ?>
 		<?php endwhile; ?>
-		
+
 		<div class="pagination">
-			<?php 					
-				$big = 999999999; // need an unlikely intege					
+			<?php
+				$big = 999999999; // need an unlikely intege
 				echo paginate_links( array(
 					'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
 					'format' => '?paged=%#%',
