@@ -51,7 +51,7 @@ get_header(); ?>
 
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div id="course-content" class="entry-content">
-			<?php the_field('downloads_will_learn'); ?>
+			<?php the_field('downloads_public'); ?>
 
 			<?php if( edd_has_user_purchased($user_ID, $download_id) ): ?>
 				<div class="section-divider">

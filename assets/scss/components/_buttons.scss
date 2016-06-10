@@ -8,8 +8,13 @@ input[type="submit"] {
 	&.edd-submit, 
 	&.edd-submit.gray, 
 	&.edd-submit:visited {
-	    color: $white;
-	    background: $primary;
+	    color: $button-color;
+	    background: $button-background;
+
+	    &:hover, &:focus, &:active {
+		    background-color: $button-background-hover;
+		    color: $button-color;
+		}
 	}
 }
 .sites-button {

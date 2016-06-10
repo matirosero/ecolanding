@@ -8,6 +8,8 @@
 
 get_header(); ?>
 
+ <?php get_template_part( 'template-parts/featured-image' ); ?>
+
 <div id="single-post" role="main">
 
 <?php do_action( 'foundationpress_before_content' ); ?>
@@ -20,11 +22,7 @@ get_header(); ?>
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
 		<div class="entry-content">
 
-		<?php
-			if ( has_post_thumbnail() ) :
-				the_post_thumbnail();
-			endif;
-		?>
+
 
 		<?php the_content(); ?>
 		</div>
