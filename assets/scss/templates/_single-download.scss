@@ -1,35 +1,6 @@
 #single-download {
   @include grid-row($width: 100%);
 
-  .entry-content {
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
-
-    @include breakpoint(medium) {
-      @include grid-column(8);
-    }
-  }
-
-  .entry-sidebar {
-
-    @include breakpoint(small) {
-      @include grid-column(12);
-    }
-
-    @include breakpoint(medium) {
-      @include grid-column(4);
-    }
-
-    .sticky {
-      width: 100%;
-      padding-right: 0.75rem;
-    }
-
-  }
-
-
-
   .course-intro {
 
     @include breakpoint(small) {

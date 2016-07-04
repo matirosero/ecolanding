@@ -47,10 +47,10 @@ get_header(); ?>
 		</div>
 	</div>
 
-	<div class="main-content" >
+	<div id="single-download-main" >
 
 		<?php do_action( 'foundationpress_post_before_entry_content' ); ?>
-		<div id="course-content" class="entry-content">
+		<div id="course-content" class="main-content">
 			<?php the_field('downloads_public'); ?>
 
 			<?php if( edd_has_user_purchased($user_ID, $download_id) ): ?>
@@ -61,7 +61,7 @@ get_header(); ?>
 			endif; ?>
 		</div>
 
-		<aside class="entry-sidebar" data-sticky-container>
+		<aside class="sidebar" data-sticky-container>
 			<div class="sticky" data-sticky data-anchor="course-content">
 				<div class="download-details">
 
