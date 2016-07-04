@@ -1,14 +1,39 @@
 .sidebar {
-  @include breakpoint(small) {
-    @include grid-column(12);
-  }
 
-  @include breakpoint(medium) {
-    @include grid-column(4);
-    // @include block-padding
-    // @include section-padding;
-  }
+    @include breakpoint(small) {
+      @include grid-column(12);
+    }
 
-  @include section-padding;
+    @include breakpoint(medium) {
+      @include grid-column(4);
+    }
 
+    .widget {
+    	border: 1px solid $light-gray;
+    	// background-color: $light-gray;
+    	margin: 0 1rem 2rem;
+    	padding: 1rem;
+    }
+
+    ul {
+    	list-style: none;
+    	margin-left:0;
+
+    	> li {
+    		margin-bottom: .5rem;
+    	}
+    }
+
+    a {
+    	color: $body-font-color;
+
+    	&:hover, &:active {
+    		color: $primary;
+    	}
+    }
+
+    ul, p {
+    	line-height: 1.35;
+
+    }
 }

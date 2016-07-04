@@ -16,7 +16,7 @@
 get_header(); ?>
 
 <div id="page" role="main">
-	<article class="main-content">
+	<div class="main-content">
 	<?php if ( have_posts() ) : ?>
 
 		<?php /* Start the Loop */ ?>
@@ -37,7 +37,7 @@ get_header(); ?>
 			</nav>
 		<?php } ?>
 
-	</article>
+	</div>
 	<?php get_sidebar(); ?>
 
 </div>

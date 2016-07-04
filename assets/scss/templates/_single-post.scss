@@ -1,5 +1,6 @@
 #single-post {
   @include grid-row();
+  @include section-padding;
   // margin-top: 3rem;
 
   .main-content {
