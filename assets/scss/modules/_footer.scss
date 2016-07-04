@@ -1,4 +1,4 @@
-#footer-container {
+.site-footer {
 	background-color: $secondary;
 	color: $white;
 	max-width: 100%;
@@ -11,7 +11,7 @@
 		color: $white;
 	}
 
-	#footer {
+	.site-info {
 		@include grid-row();
 		padding: rem-calc(30) 0;
 

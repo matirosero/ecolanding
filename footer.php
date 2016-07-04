@@ -10,24 +10,25 @@
 
 ?>
 
-		</section>
-		<div id="footer-container">
-			<footer id="footer">
-				<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, todos los derechos reservados.<br />
-				<small>Desarrollo web: <a href="http://matilderosero.com">Matilde Rosero</a>.</small></p>
-				<?php //do_action( 'foundationpress_before_footer' ); ?>
-				<?php //dynamic_sidebar( 'footer-widgets' ); ?>
-				<?php //do_action( 'foundationpress_after_footer' ); ?>
-			</footer>
-		</div>
+	</div><!-- .site-content -->
+	
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+			<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo('name'); ?>, todos los derechos reservados.<br />
+			<small>Desarrollo web: <a href="http://matilderosero.com">Matilde Rosero</a>.</small></p>
+			<?php //do_action( 'foundationpress_before_footer' ); ?>
+			<?php //dynamic_sidebar( 'footer-widgets' ); ?>
+			<?php //do_action( 'foundationpress_after_footer' ); ?>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
 
-		<?php do_action( 'foundationpress_layout_end' ); ?>
+	<?php do_action( 'foundationpress_layout_end' ); ?>
 
-<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
-		</div><!-- Close off-canvas wrapper inner -->
-	</div><!-- Close off-canvas wrapper -->
-</div><!-- Close off-canvas content wrapper -->
-<?php endif; ?>
+	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
+			</div><!-- Close off-canvas wrapper inner -->
+		</div><!-- Close off-canvas wrapper -->
+	</div><!-- Close off-canvas content wrapper -->
+	<?php endif; ?>
 
 
 <?php wp_footer(); ?>

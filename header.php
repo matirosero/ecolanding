@@ -11,18 +11,19 @@
 ?>
 <!doctype html>
 <html class="no-js" <?php language_attributes(); ?> >
-	<head>
-		<meta charset="<?php bloginfo( 'charset' ); ?>" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<?php wp_head(); ?>
-	</head>
-	<body <?php body_class(); ?>>
+<head>
+	<meta charset="<?php bloginfo( 'charset' ); ?>" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<?php wp_head(); ?>
+</head>
+
+<body <?php body_class(); ?>>
 	<?php do_action( 'foundationpress_after_body' ); ?>
 
 	<?php if ( get_theme_mod( 'wpt_mobile_menu_layout' ) == 'offcanvas' ) : ?>
-	<div class="off-canvas-wrapper">
-		<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-		<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
+		<div class="off-canvas-wrapper">
+			<div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+			<?php get_template_part( 'template-parts/mobile-off-canvas' ); ?>
 	<?php endif; ?>
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
@@ -49,7 +50,7 @@
 				<?php endif; ?>
 			</div>
 		</nav>
-	</header>
+	</header><!-- .site-header -->
 
-	<section class="container">
+	<div id="content" class="site-content">
 		<?php do_action( 'foundationpress_after_header' );

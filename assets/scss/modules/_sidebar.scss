@@ -5,7 +5,10 @@
 
   @include breakpoint(medium) {
     @include grid-column(4);
-    @include block-padding
+    // @include block-padding
     // @include section-padding;
   }
+
+  @include section-padding;
+
 }
