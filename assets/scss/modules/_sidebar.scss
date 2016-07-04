@@ -21,11 +21,16 @@
 
     	> li {
     		margin-bottom: .5rem;
+
+    		&:last-child {
+    			margin-bottom: 0;
+    		}
     	}
     }
 
     a {
     	color: $body-font-color;
+    	font-weight:normal;
 
     	&:hover, &:active {
     		color: $primary;
@@ -34,6 +39,12 @@
 
     ul, p {
     	line-height: 1.35;
+    	&:last-child {
+    		margin-bottom: 0;
+    	}
+    }
 
+    .input-group {
+    	margin-bottom: 0;
     }
 }
