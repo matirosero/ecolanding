@@ -7,6 +7,7 @@
   &:before {
     font-family: FontAwesome;
     font-style: normal;
+    font-size: 1.25rem;
     font-weight: normal;
     text-decoration: inherit;
     margin-right: rem-calc(8);
@@ -14,7 +15,7 @@
 }
 .youtube-link a {
   &:before {
-    content: $fa-var-youtube-play;
+    content: $fa-var-youtube;
   }
 }
 .facebook-link a {
