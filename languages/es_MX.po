@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FoundationPress\n"
-"POT-Creation-Date: 2016-07-04 18:29-0600\n"
-"PO-Revision-Date: 2016-07-04 18:30-0600\n"
+"POT-Creation-Date: 2016-07-05 14:20-0600\n"
+"PO-Revision-Date: 2016-07-05 14:23-0600\n"
 "Last-Translator: Alex Fermon <alex@fermongroup.com>\n"
 "Language-Team: Le Saint <info@lesaint.ca>\n"
 "Language: es\n"
@@ -417,6 +417,11 @@ msgstr ""
 msgid "Read More"
 msgstr "Seguir leyendo"
 
+#: ../library/eco-functions.php:34
+#, php-format
+msgid "%d item"
+msgstr "%d ítem"
+
 #: ../library/entry-meta.php:13
 msgid "Written by"
 msgstr "Escrito por"
@@ -489,6 +494,19 @@ msgstr ""
 msgid "FP Large"
 msgstr ""
 
+#: ../library/theme-options.php:20
+msgid "Social Media Icons"
+msgstr ""
+
+#: ../library/theme-options.php:74
+msgid "email icon"
+msgstr ""
+
+#: ../library/theme-options.php:80
+#, php-format
+msgid "%s icon"
+msgstr ""
+
 #: ../library/widget-areas.php:13
 msgid "Sidebar widgets"
 msgstr "Widgets laterales"
@@ -505,7 +523,7 @@ msgstr "Widgets del pie de página"
 msgid "Drag widgets to this footer container"
 msgstr "Arrastra widgets a este contenedor del pie de página"
 
-#: ../page-templates/front.php:39 ../page-templates/page-full-width.php:22
+#: ../page-templates/front.php:41 ../page-templates/page-full-width.php:22
 #: ../page-templates/page-sidebar-left.php:22 ../page-templates/test.php:22
 #: ../page.php:30 ../single-download.php:121 ../single.php:27
 #: ../woocommerce.php:26

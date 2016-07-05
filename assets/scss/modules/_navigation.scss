@@ -1,28 +1,38 @@
-.facebook-link a,
-.youtube-link a {
+a {
+  .facebook-link &,
+  .youtube-link &,
+  .menu-item-type-cart & {
 
-  span {
-    @include hide-for(medium);
+    &:before {
+      font-family: FontAwesome;
+      font-style: normal;
+      font-size: 1.25rem;
+      font-weight: normal;
+      text-decoration: inherit;
+      margin-right: rem-calc(8);
+    }
   }
-  &:before {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-size: 1.25rem;
-    font-weight: normal;
-    text-decoration: inherit;
-    margin-right: rem-calc(8);
+
+  .facebook-link &,
+  .youtube-link & {
+    span {
+      @include hide-for(medium);
+    }
   }
-}
-.youtube-link a {
-  &:before {
+
+  .youtube-link &:before {
     content: $fa-var-youtube;
   }
-}
-.facebook-link a {
-  &:before {
+  .facebook-link &:before {
     content: $fa-var-facebook;
   }
+
+  .menu-item-type-cart &:before {
+    content: $fa-var-shopping-cart;
+  }
+
 }
+
 
 /* Navigation breakpoints */
 
@@ -79,11 +89,11 @@
       line-height: 45px;
   }
 
-  .menu>li:not(.menu-text)>a { 
-    //padding: 1rem; 
+  .menu>li:not(.menu-text)>a {
+    //padding: 1rem;
   }
-  .menu li:not(:last-child) { 
-    // border-right: 1px solid #4e4e4e; 
+  .menu li:not(:last-child) {
+    // border-right: 1px solid #4e4e4e;
   }
 
   .dropdown.menu .submenu {

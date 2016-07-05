@@ -53,5 +53,8 @@ require_once( 'library/responsive-images.php' );
 /** Eco functions */
 require_once( 'library/eco-functions.php' );
 
+require_once( 'library/theme-options.php' );
+
+
 /** Functions to interact with EDD */
 require_once( 'library/edd-functions.php' );
