@@ -90,8 +90,9 @@ get_header(); ?>
 							<header class="course-header" style="background-image: url(<?php the_post_thumbnail_url( 'product-image' ); ?>);">
 								<div class="hero-header-container">
 									<?php //the_post_thumbnail('product-image'); ?>
-									<h3 class="course-title"><?php the_title(); ?>
-										<small><?php the_field('downloads_subtitle'); ?></small>
+									<h3 class="course-title">
+										<a href="<?php the_permalink(); ?>"><?php the_title(); ?>
+										<small><?php the_field('downloads_subtitle'); ?></small></a>
 									</h3>
 
 									<div class="product-price-buttons">

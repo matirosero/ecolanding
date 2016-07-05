@@ -287,6 +287,12 @@
 				display: block;
 				line-height: inherit;
 			}
+			a {
+				color: $white;
+				&:hover, &:active {
+					color: $primary;
+				}
+			}
 		}
 
 		.course-intro,
