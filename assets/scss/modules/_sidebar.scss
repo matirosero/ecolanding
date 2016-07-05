@@ -13,6 +13,11 @@
     	// background-color: $light-gray;
     	margin: 0 1rem 2rem;
     	padding: 1rem;
+
+        &.widget_facebook_likebox {
+            padding: 0;
+            border: 0;
+        }
     }
 
     ul {
