@@ -6,7 +6,7 @@ remove_action( 'edd_after_download_content', 'edd_append_purchase_link' );
 
 /**
  * Get the payment ID from a user ID and download IE
- * 
+ *
  * @param int $download_id Download ID, int $user_ID User ID,
  * @return int $payment_id
 */
@@ -60,7 +60,7 @@ function edd_get_payment_id($user_ID, $download_id) {
 
 /**
  * Get an array of all the log IDs using the EDD Logging Class
- * 
+ *
  * @return array if logs, null otherwise
  * @param $download_id Download's ID
 */
@@ -83,7 +83,7 @@ function get_log_ids( $download_id = '' ) {
 		// return our array
 		return $log_ids;
 	}
-	
+
 	return null;
 
 }
@@ -91,7 +91,7 @@ function get_log_ids( $download_id = '' ) {
 
 /**
  * Get array of payment IDs
- * 
+ *
  * @param int $download_id Download ID
  * @return array $payment_ids
 */
@@ -107,10 +107,10 @@ function get_payment_ids( $download_id = '' ) {
 			// get the payment ID for each corresponding log ID
 			$payment_ids[] = get_post_meta( $id, '_edd_log_payment_id', true );
 		}
-		
+
 		// return our payment IDs
 		return $payment_ids;
 	}
-	
+
 	return null;
 }

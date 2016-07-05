@@ -21,10 +21,10 @@
 		<?php foundationpress_entry_meta(); ?>
 	</header>
 	<div class="entry-content">
-		<?php the_content( __( 'Continue reading...', 'foundationpress' ) ); ?>
+		<?php 			
+			the_excerpt(); ?>
 	</div>
 	<footer>
 		<?php $tag = get_the_tags(); if ( $tag ) { ?><p><?php the_tags(); ?></p><?php } ?>
 	</footer>
-	<hr />
 </div>

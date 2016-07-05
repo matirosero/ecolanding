@@ -50,5 +50,8 @@ require_once( 'library/responsive-images.php' );
 /** If your site requires protocol relative url's for theme assets, uncomment the line below */
 // require_once( 'library/protocol-relative-theme-assets.php' );
 
+/** Eco functions */
+require_once( 'library/eco-functions.php' );
+
 /** Functions to interact with EDD */
 require_once( 'library/edd-functions.php' );
