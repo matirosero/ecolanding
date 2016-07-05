@@ -45,11 +45,6 @@ get_header(); ?>
 						<?php comments_template(); ?>
 						<?php do_action( 'foundationpress_page_after_comments' ); ?>
 
-						<?php
-						$cart_items    = edd_get_cart_contents();
-						$cart_quantity = edd_get_cart_quantity();
-						echo $cart_quantity;
-						?>
 					</div>
 
 				</div>

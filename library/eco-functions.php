@@ -18,7 +18,7 @@ add_filter( 'wp_nav_menu_items', 'my_wp_nav_menu_items', 10, 2 );
 
 function my_wp_nav_menu_items( $items, $args, $ajax = false ) {
 	// Top Navigation Area Only
-	if ( ( isset( $ajax ) && $ajax ) || ( property_exists( $args, 'theme_location' ) && $args->theme_location === 'top-bar-r' ) ) {
+	if ( ( isset( $ajax ) && $ajax ) || ( property_exists( $args, 'theme_location' ) && ( $args->theme_location === 'top-bar-r' || $args->theme_location === 'mobile-nav' ) ) ) {
 
 		// Easy Digital Downloads
 		if ( class_exists( 'Easy_Digital_Downloads' ) && edd_get_cart_quantity() != 0 ) {
