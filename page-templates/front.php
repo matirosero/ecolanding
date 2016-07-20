@@ -73,7 +73,7 @@ get_header(); ?>
 		$offset = $current_page > 0 ? $per_page * ($current_page-1) : 0;
 		$product_args = array(
 			'post_type' => 'download',
-			'posts_per_page' => $per_page,
+			'posts_per_page' => 1,//$per_page,
 			'offset' => $offset,
 			'order' => ASC
 		);
@@ -82,7 +82,11 @@ get_header(); ?>
 
 		<?php if ($products->have_posts()) : $i = 1; ?>
 
-			<ul class="course-grid row small-up-1 large-up-2">
+			<div class="row">
+				<div class="small-11 small-centered medium-9 medium-centered large-7 columns">
+
+			<!-- <ul class="course-grid row small-up-1 large-up-2"> -->
+			<ul class="course-grid row small-up-1">
 
 				<?php while ($products->have_posts()) : $products->the_post(); ?>
 					<li class="course column">
@@ -157,6 +161,8 @@ get_header(); ?>
 				<?php endwhile; ?>
 
 			</ul>
+
+		</div></div>
 
 		<?php else : ?>
 
