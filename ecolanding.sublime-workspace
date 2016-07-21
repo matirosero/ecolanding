@@ -288,62 +288,6 @@
 	"buffers":
 	[
 		{
-			"file": "assets/scss/global/_settings.scss",
-			"settings":
-			{
-				"buffer_size": 15156,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "page-templates/front.php",
-			"settings":
-			{
-				"buffer_size": 5924,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/components/_forms.scss",
-			"settings":
-			{
-				"buffer_size": 557,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "single.php",
-			"settings":
-			{
-				"buffer_size": 1182,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "template-parts/content.php",
-			"settings":
-			{
-				"buffer_size": 676,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/templates/_post.scss",
-			"settings":
-			{
-				"buffer_size": 472,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/scss/templates/_page-default.scss",
-			"settings":
-			{
-				"buffer_size": 228,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "functions.php",
 			"settings":
 			{
@@ -360,26 +304,10 @@
 			}
 		},
 		{
-			"file": "assets/scss/modules/_navigation.scss",
+			"file": "page-templates/front.php",
 			"settings":
 			{
-				"buffer_size": 1836,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "assets/components/fontawesome/scss/_icons.scss",
-			"settings":
-			{
-				"buffer_size": 44553,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "library/theme-options.php",
-			"settings":
-			{
-				"buffer_size": 2818,
+				"buffer_size": 6101,
 				"line_ending": "Unix"
 			}
 		},
@@ -467,51 +395,47 @@
 	[
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/components",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/components/fontawesome",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/components/fontawesome/scss",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/fonts",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/components",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/global",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/modules",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/library",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page-templates",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/template-parts"
 	],
 	"file_history":
 	[
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/library/theme-options.php",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/modules/_navigation.scss",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_page-default.scss",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_post.scss",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/template-parts/content.php",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/single.php",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/components/_forms.scss",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page-templates/front.php",
+		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/global/_settings.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/modules/_sidebar.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_front.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/index.php",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page-templates/front.php",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/modules/_navigation.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_single-download.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_single-post.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/single-download.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_single-gen.scss",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_page-default.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page-templates/user-account.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page-templates/page-sidebar-left.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page-templates/page-full-width.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/page.php",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/single.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/modules/_footer.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/header.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/footer.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/sidebar.php",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_post.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/foundation.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/library/entry-meta.php",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/global/_settings.scss",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/template-parts/content.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/components/_featured-image.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/components/_buttons.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/global/_utility.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/library/navigation.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/templates/_user-account.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/components/_edd.scss",
-		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/components/_forms.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/edd_templates/shortcode-profile-editor.php",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/global/_variables.scss",
 		"/Users/Mati/Sites/eco/wp-content/themes/ecolanding-foundationpress/assets/scss/global/_mixins.scss",
@@ -607,8 +531,7 @@
 		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/forms/_buttons.scss",
 		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/modules/_slick-theme.scss",
 		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/js/navigation.js",
-		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/variables-site/_colors.scss",
-		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/archive.php"
+		"/Users/Mati/Sites/maribel2/wp-content/themes/adirondacky/sass/variables-site/_colors.scss"
 	],
 	"find":
 	{
@@ -767,238 +690,11 @@
 	"groups":
 	[
 		{
-			"selected": 8,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "assets/scss/global/_settings.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 15156,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								6272,
-								6272
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 13,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "page-templates/front.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5924,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1696,
-								1696
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 429.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "assets/scss/components/_forms.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 557,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								119,
-								119
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 10,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "single.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1182,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								683,
-								683
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 12,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "template-parts/content.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 676,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								307,
-								323
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 11,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "assets/scss/templates/_post.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 472,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								446,
-								446
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 14,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "assets/scss/templates/_page-default.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 228,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								33,
-								58
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 15,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
 					"file": "functions.php",
 					"semi_transient": false,
 					"settings":
@@ -1022,14 +718,14 @@
 							"syntax": "Packages/PHP/PHP.sublime-syntax"
 						},
 						"translation.x": 0.0,
-						"translation.y": 422.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 9,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
+					"buffer": 1,
 					"file": "library/eco-functions.php",
 					"semi_transient": false,
 					"settings":
@@ -1041,103 +737,8 @@
 						"selection":
 						[
 							[
-								949,
-								949
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.sublime-syntax"
-						},
-						"translation.x": 0.0,
-						"translation.y": 292.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 9,
-					"file": "assets/scss/modules/_navigation.scss",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1836,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								362,
-								362
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 10,
-					"file": "assets/components/fontawesome/scss/_icons.scss",
-					"semi_transient": true,
-					"settings":
-					{
-						"buffer_size": 44553,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								8156,
-								8177
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 1952.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 11,
-					"file": "library/theme-options.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2818,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								795,
-								837
+								2329,
+								2337
 							]
 						],
 						"settings":
@@ -1146,18 +747,49 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.sublime-syntax",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 273.0,
+						"translation.y": 785.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 5,
+					"stack_index": 1,
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 2,
+					"file": "page-templates/front.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 6101,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2552,
+								2552
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1099.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
 					"file": "header.php",
 					"semi_transient": false,
 					"settings":
@@ -1182,14 +814,14 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 341.0,
+						"translation.y": 347.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 8,
+					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 4,
 					"file": "template-parts/mobile-top-bar.php",
 					"semi_transient": false,
 					"settings":
@@ -1216,11 +848,11 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
-					"buffer": 14,
+					"buffer": 5,
 					"file": "library/navigation.php",
 					"semi_transient": false,
 					"settings":
@@ -1248,11 +880,11 @@
 						"translation.y": 284.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 1,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 15,
+					"buffer": 6,
 					"file": "comments.php",
 					"semi_transient": false,
 					"settings":
@@ -1280,11 +912,11 @@
 						"translation.y": 867.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 16,
+					"stack_index": 7,
 					"type": "text"
 				},
 				{
-					"buffer": 16,
+					"buffer": 7,
 					"file": "library/edd-functions.php",
 					"semi_transient": false,
 					"settings":
@@ -1312,7 +944,7 @@
 						"translation.y": 1385.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
