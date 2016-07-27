@@ -12,8 +12,8 @@ get_header(); ?>
 				</a>
 			</div>
 			<div class="tagline">
-				<h1><span class="small-break">Tu vida. </span><span class="small-break">Tu negocio. </span><span class="small-break">Tu éxito.</span></h1>
-				<p class="subheader">Recibe de forma gratuita información valiosa sobre productividad, mercadeo, estrategia, emprendedurismo, vida integral, y más.</p>
+				<h1><span class="small-break">Tu vida. </span><span class="small-break">Tu negocio. <br /></span><span class="small-break">Tu éxito.</span></h1>
+				<p class="subheader">Recibí de forma gratuita información valiosa sobre productividad, mercadeo, estrategia, emprendedurismo, vida integral, y más.</p>
 				<?php
 					if( function_exists( 'mc4wp_show_form' ) ) {
 					    mc4wp_show_form();
@@ -182,8 +182,8 @@ get_header(); ?>
 		<div class="contact-container">
 			<div class="contact-form">
 				<header>
-					<h2>Contáctanos</h2>
-					<p>Escríbenos a <a ref="mailto:"></a> o llena este formulario y nos pondremos en contacto en cuanto sea posible. </p>
+					<h2>Contactanos</h2>
+					<p>Escribinos a <a ref="mailto:info@soyempresarioeco.com">info@soyempresarioeco.com</a> o llená este formulario y nos pondremos en contacto en cuanto sea posible. </p>
 				</header>
 				<?php echo do_shortcode( '[contact-form-7 id="89" title="Contáctanos"]' ); ?>
 			</div>

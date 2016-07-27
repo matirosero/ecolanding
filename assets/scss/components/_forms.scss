@@ -1,5 +1,8 @@
 .newsletter-signup {
-	input[type='email'] {
+	margin-top: 1rem;
+
+	input[type='email'],
+	input[type='text'] {
 		display: inline-block;
 		width: auto;
 		margin-right: .5rem;
@@ -10,6 +13,7 @@
 	}
 	.button {
 		// vertical-align: none;
+		margin-bottom: 0;
 	}
 
 }

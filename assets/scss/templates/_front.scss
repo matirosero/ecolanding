@@ -94,7 +94,7 @@
 		}
 		@include breakpoint(large) {
 			@include grid-column(3);
-			@include grid-column-position(1);
+			@include grid-column-position(0);
 			padding-top: 6rem;
 		}
 	}
@@ -112,7 +112,7 @@
 			padding-top: 5rem;
 		}
 		@include breakpoint(large) {
-			@include grid-column(7);
+			@include grid-column(8);
 			@include grid-column-position(-1);
 			padding-top: 5rem;
 		}
