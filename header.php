@@ -31,15 +31,21 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="mobile-menu"></button>
-			<div class="title-bar-title">
-				<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Soy empresario <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-topbar.svg" alt="ECO" /></a>
-			</div>
+			<?php if ( is_front_page() || is_home() ) : ?>
+				<h1 class="title-bar-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Soy empresario <span class="show-for-sr">ECO</span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-topbar.svg" alt="ECO" /></a>
+				</h1>
+			<?php else : ?>
+				<div class="title-bar-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Soy empresario <span class="show-for-sr">ECO</span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-topbar.svg" alt="ECO" /></a>
+				</div>
+		<?php endif; ?>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Soy empresario <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-topbar.svg" alt="ECO" /></a></li>
+					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">Soy empresario <span class="show-for-sr">ECO</span><img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logo-eco-topbar.svg" alt="ECO" /></a></li>
 				</ul>
 			</div>
 			<div class="top-bar-right">
