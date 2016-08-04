@@ -51,3 +51,20 @@
     display: block;
     width: auto;
 }
+
+.free-download-terms {
+	font-size: .8rem;
+	display: block;
+	&.alert {
+		color: $alert;
+		font-weight: bold;
+	}
+}
+
+.edd-free-downloads-mobile {
+	#edd_free_download_optin,
+	.edd-free-downloads-checkbox-label,
+	#edd_free_download_optin + label {
+		display: none;
+	}
+}
